@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: streamlit_backtest_app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run streamlit_backtest_app.py --server.port 8080 --server.enableCORS false
