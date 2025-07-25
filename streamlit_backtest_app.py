@@ -6,6 +6,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, roc_curve, auc
 
 st.title("📈 Walk-Forward Backtesting App - Logistic Regression")
+# 📷 Quick preview of expected CSV format
+from PIL import Image
+image = Image.open("Goog.JPG")
+st.image(image, caption="CSV Format: Stocks, SP500", use_container_width=True, output_format="JPEG")
 
 # File upload
 st.sidebar.header("Upload CSV Files")
